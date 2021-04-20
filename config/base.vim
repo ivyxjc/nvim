@@ -1,4 +1,4 @@
-set timeoutlen=100
+set timeoutlen=200
 let g:mapleader= "\<Space>"
 let g:maplocalleader= "\<M>"
 " 基本配置
