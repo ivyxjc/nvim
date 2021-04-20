@@ -1,3 +1,6 @@
+set timeoutlen=100
+let g:mapleader= "\<Space>"
+let g:maplocalleader= "\<M>"
 " 基本配置
 if &compatible
     " 不要兼容vi
