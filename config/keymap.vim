@@ -97,3 +97,29 @@ augroup vime_floaterm_group
     au FileType floaterm tnoremap <buffer> <silent> <M-h> <c-\><c-n>:FloatermPrev<CR>
     au FileType floaterm tnoremap <buffer> <silent> <M-l> <c-\><c-n>:FloatermNext<CR>
 augroup END
+
+"-----------------------------------------------------------------------------
+" gitgutter
+"-----------------------------------------------------------------------------
+" 导航到修改块
+nnoremap <leader>gj :GitGutterNextHunk<cr>
+nnoremap <leader>gk :GitGutterPrevHunk<cr>
+" 显示光标处的修改信息
+nnoremap <leader>gp :GitGutterPreviewHunk<cr>
+" 撤销当前块的修改
+nnoremap <leader>gu :GitGutterUndoHunk<cr>
+nnoremap <leader>gh :GitGutterStageHunk<cr>
+
+"-----------------------------------------------------------------------------
+" fugitive
+"-----------------------------------------------------------------------------
+" 导航到修改块
+nnoremap <leader>gj :GitGutterNextHunk<cr>
+nnoremap <leader>gk :GitGutterPrevHunk<cr>
+" 显示光标处的修改信息
+nnoremap <leader>gp :GitGutterPreviewHunk<cr>
+" 撤销当前块的修改
+nnoremap <leader>gu :GitGutterUndoHunk<cr>
+nnoremap <leader>gh :GitGutterStageHunk<cr>
+" endif
+
