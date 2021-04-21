@@ -1,6 +1,23 @@
+"windows split
+nnoremap <silent> <leader>vv :vsp<CR>
+nnoremap <silent> <leader>vh :sp<CR>
+
+"copy, paste and save
+noremap <C-s> :w<CR>
+nnoremap <silent> <C-a> ggVG
+vnoremap <silent> <C-c> "+y
+
+"choose window
+nnoremap <silent> <leader>wh <c-w>h<CR>
+nnoremap <silent> <leader>j <c-w>j<CR>
+nnoremap <silent> <leader>k <c-w>k<CR>
+nnoremap <silent> <leader>l <c-w>l<CR>
+nnoremap <silent> <leader>q :q<CR>
+
 "-----------------------------------------------------------------------------
-" 使用ctrl jk上下移动选项
+" fzf 
 "-----------------------------------------------------------------------------
+"使用ctrl jk上下移动选项
 augroup vime_fzf_group
     autocmd!
     au FileType fzf tnoremap <buffer> <C-j> <Down>
