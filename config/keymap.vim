@@ -99,6 +99,10 @@ augroup vime_floaterm_group
 augroup END
 
 "-----------------------------------------------------------------------------
+" git starts
+"-----------------------------------------------------------------------------
+
+"-----------------------------------------------------------------------------
 " gitgutter
 "-----------------------------------------------------------------------------
 " 导航到修改块
@@ -113,13 +117,22 @@ nnoremap <leader>gh :GitGutterStageHunk<cr>
 "-----------------------------------------------------------------------------
 " fugitive
 "-----------------------------------------------------------------------------
-" 导航到修改块
-nnoremap <leader>gj :GitGutterNextHunk<cr>
-nnoremap <leader>gk :GitGutterPrevHunk<cr>
-" 显示光标处的修改信息
-nnoremap <leader>gp :GitGutterPreviewHunk<cr>
-" 撤销当前块的修改
-nnoremap <leader>gu :GitGutterUndoHunk<cr>
-nnoremap <leader>gh :GitGutterStageHunk<cr>
-" endif
+" 添加当前文件到index
+" nnoremap <leader>gw <esc>:Gwrite<cr>
+" 提交
+" nnoremap <leader>gc <esc>:Gcommit<cr>
+" 恢复当前文件到上个版本
+" nnoremap <leader>gr <esc>:Gread<cr>
+" 查看当前文件与提交文件的不同
+nnoremap <leader>gf <esc>:Gdiff<cr>
+"
+" nnoremap <leader>gb <esc>:Gblame<cr>
 
+"-----------------------------------------------------------------------------
+" lazy git
+"-----------------------------------------------------------------------------
+nnoremap <silent> <leader>lg :LazyGit<CR>
+
+"-----------------------------------------------------------------------------
+" git ends
+"-----------------------------------------------------------------------------
