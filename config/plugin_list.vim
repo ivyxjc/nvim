@@ -22,3 +22,6 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'kristijanhusak/defx-icons'
+
+
+Plug 'joshdick/onedark.vim'

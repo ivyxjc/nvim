@@ -15,7 +15,7 @@ call plug#end()
 " 载入快捷键配置
 LoadScript keymap.vim
 " " 载入主题配置
-" LoadScript theme/theme.vim
+LoadScript theme/theme.vim
 LoadScript theme/statusline.vim
 " LoadScript theme/tabline.vim
 
