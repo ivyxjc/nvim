@@ -28,8 +28,8 @@ augroup END
 nnoremap <silent> <leader>ff  :Files<CR>
 nnoremap <silent> <leader>fb  :Buffers<CR>
 nnoremap <silent> <leader>fw  :Windows<CR>
-nnoremap <silent> <leader>fs  :BLines<CR>
 nnoremap <silent> <leader>fa  :Rg<CR>
+nnoremap <silent> <leader>fs  :BLines<CR>
 nnoremap <silent> <leader>fh  :History<CR>
 nnoremap <silent> <c-f>       :BLines<CR>
 nnoremap <silent> <c-F>       :Rg<CR>
@@ -86,3 +86,16 @@ nnoremap <silent> <leader>gt :LazyGit<CR>
 "-----------------------------------------------------------------------------
 " git ends
 "-----------------------------------------------------------------------------
+
+
+""-----------------------------------------------------------------------------
+" rnvimr 
+""-----------------------------------------------------------------------------
+tnoremap <silent> <M-i> <C-\><C-n>:RnvimrResize<CR>
+nnoremap <silent> <M-o> :RnvimrToggle<CR>
+tnoremap <silent> <M-o> <C-\><C-n>:RnvimrToggle<CR>
+
+""-----------------------------------------------------------------------------
+" nerdtree
+""-----------------------------------------------------------------------------
+nnoremap <leader>tt :NERDTreeToggle<CR>
