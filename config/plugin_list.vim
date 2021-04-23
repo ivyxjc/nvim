@@ -11,7 +11,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'kdheepak/lazygit.nvim'
 
 " status line
- Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim' ( conflict with plugin nvim-bufferline.lua)
+"Plug 'glepnir/galaxyline.nvim'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'glepnir/spaceline.vim'
 
 " file tree
 "if has('nvim')
@@ -23,10 +26,16 @@ Plug 'kdheepak/lazygit.nvim'
 "endif
 "Plug 'kristijanhusak/defx-icons'
 
+
 " file tree 
 "Plug 'kyazdani42/nvim-web-devicons' " for file icons
 "Plug 'kyazdani42/nvim-tree.lua'
 
+" buffer
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'akinsho/nvim-bufferline.lua'
+
+" file tree
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'

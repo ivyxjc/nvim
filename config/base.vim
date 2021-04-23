@@ -1,4 +1,5 @@
 set timeoutlen=200
+set termguicolors
 let g:mapleader= "\<Space>"
 let g:maplocalleader= "\<M>"
 " 基本配置

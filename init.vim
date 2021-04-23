@@ -16,7 +16,7 @@ call plug#end()
 LoadScript keymap.vim
 " " 载入主题配置
 LoadScript theme/theme.vim
-LoadScript theme/statusline.vim
+" LoadScript theme/statusline.vim
 " LoadScript theme/tabline.vim
 
 " 依据插件名字载入对应的插件配置
