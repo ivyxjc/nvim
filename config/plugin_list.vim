@@ -1,3 +1,6 @@
+" theme
+Plug 'joshdick/onedark.vim'
+
 " float terminal
 Plug 'voldikss/vim-floaterm', {'on': ['FloatermNew', 'FloatermToggle']}
 " fzf search
@@ -40,9 +43,12 @@ Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 
+" ranger for vim
 Plug 'kevinhwang91/rnvimr'
 
-Plug 'joshdick/onedark.vim'
+
+"dashboard
+Plug 'glepnir/dashboard-nvim'
 
 "-----------------------------
 " programming starts
