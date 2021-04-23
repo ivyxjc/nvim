@@ -1,6 +1,7 @@
 set timeoutlen=200
 set termguicolors
-set scrolloff=20
+set scrolloff=0
+set autowriteall
 let g:mapleader= "\<Space>"
 let g:maplocalleader= "\<M>"
 " 基本配置

@@ -1,8 +1,9 @@
 lua <<EOF
+local api = vim.api
 local enhance_attach = function(client, bufnr)
-    if client.resolved_capabilities.document_formatting then
-        format.lsp_before_save()
-    end
+    --if client.resolved_capabilities.document_formatting then
+    --    format.lsp_before_save()
+    --end
     local opts = {
         noremap = true,
         silent = false
@@ -38,4 +39,5 @@ lspconfig.clojure_lsp.setup {
     filetypes = {"clojure", "edn", "clj", "cljs", "cljc"},
     root_dir = lspconfig.util.root_pattern("project.clj", "deps.edn")
 }
+
 EOF

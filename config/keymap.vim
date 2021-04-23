@@ -112,3 +112,20 @@ tnoremap <silent> <M-o> <C-\><C-n>:RnvimrToggle<CR>
 " nerdtree
 ""-----------------------------------------------------------------------------
 nnoremap <leader>tt :NERDTreeToggle<CR>
+
+""-----------------------------------------------------------------------------
+" programming starts
+""-----------------------------------------------------------------------------
+
+" lspsaga
+nnoremap <silent><leader>ca <cmd>lua require('lspsaga.codeaction').code_action()<CR>
+
+" nvim-compe
+inoremap <silent><expr> <CR> compe#confirm('<CR>')
+inoremap <silent><expr> <C-Space> compe#complete()
+
+
+
+""-----------------------------------------------------------------------------
+" programming ends
+""-----------------------------------------------------------------------------

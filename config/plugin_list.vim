@@ -53,9 +53,15 @@ Plug 'glepnir/dashboard-nvim'
 "-----------------------------
 " programming starts
 "-----------------------------
-Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate'}
+
+"Plug 'nvim-lua/completion-nvim'
+"Plug 'glepnir/lspsaga.nvim'
+Plug 'hrsh7th/nvim-compe'
+Plug 'Raimondi/delimitMate'
 
 ""-----------------------------
 " programming starts
-"-----------------------------
+"------------------------------
+
