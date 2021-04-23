@@ -44,3 +44,11 @@ Plug 'kevinhwang91/rnvimr'
 
 Plug 'joshdick/onedark.vim'
 
+"-----------------------------
+" programming starts
+"-----------------------------
+Plug 'neovim/nvim-lspconfig'
+
+""-----------------------------
+" programming starts
+"-----------------------------
