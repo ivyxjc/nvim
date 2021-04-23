@@ -47,6 +47,7 @@ Plug 'joshdick/onedark.vim'
 "-----------------------------
 " programming starts
 "-----------------------------
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 
 ""-----------------------------
