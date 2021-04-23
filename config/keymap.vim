@@ -8,6 +8,7 @@ nnoremap <silent> <leader>vh :sp<CR>
 
 "copy, paste and save
 noremap <C-s> :w<CR>
+inoremap <C-s> <c-o>:w<CR>
 nnoremap <silent> <C-a> ggVG
 vnoremap <silent> <C-c> "+y
 
@@ -17,6 +18,9 @@ nnoremap <silent> <leader>j <c-w>j<CR>
 nnoremap <silent> <leader>k <c-w>k<CR>
 nnoremap <silent> <leader>l <c-w>l<CR>
 nnoremap <silent> <leader>q :q<CR>
+
+"close uand delete buffer
+nnoremap <silent> <leader>bd :bd<CR>
 
 
 "-----------------------------------------------------------------------------
@@ -30,7 +34,10 @@ augroup vime_fzf_group
     au FileType fzf tnoremap <buffer> <Esc> <c-g>
 augroup END
 
-nnoremap <silent> <leader>ff  :Files<CR>
+"nnoremap <silent> <leader>ff  :Files<CR>
+"prevent fzf open files inside NERDTree buffer
+"ref https://github.com/junegunn/fzf/issues/453 
+nnoremap <silent> <expr> <Leader>ff (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
 nnoremap <silent> <leader>fb  :Buffers<CR>
 nnoremap <silent> <leader>fw  :Windows<CR>
 nnoremap <silent> <leader>fa  :Rg<CR>
@@ -99,6 +106,7 @@ nnoremap <silent> <leader>gt :LazyGit<CR>
 tnoremap <silent> <M-i> <C-\><C-n>:RnvimrResize<CR>
 nnoremap <silent> <M-o> :RnvimrToggle<CR>
 tnoremap <silent> <M-o> <C-\><C-n>:RnvimrToggle<CR>
+
 
 ""-----------------------------------------------------------------------------
 " nerdtree
