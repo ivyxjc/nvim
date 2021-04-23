@@ -1,3 +1,7 @@
+"-----------------------------------------------------------------------------
+" basic keymap 
+"-----------------------------------------------------------------------------
+
 "windows split
 nnoremap <silent> <leader>vv :vsp<CR>
 nnoremap <silent> <leader>vh :sp<CR>
@@ -13,6 +17,7 @@ nnoremap <silent> <leader>j <c-w>j<CR>
 nnoremap <silent> <leader>k <c-w>k<CR>
 nnoremap <silent> <leader>l <c-w>l<CR>
 nnoremap <silent> <leader>q :q<CR>
+
 
 "-----------------------------------------------------------------------------
 " fzf 
