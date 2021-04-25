@@ -14,6 +14,7 @@ vnoremap <silent> <C-c> "+y
 
 "choose window
 nnoremap <silent> <leader>wh <c-w>h<CR>
+nnoremap <silent> <leader>h <c-w>h<CR>
 nnoremap <silent> <leader>j <c-w>j<CR>
 nnoremap <silent> <leader>k <c-w>k<CR>
 nnoremap <silent> <leader>l <c-w>l<CR>
@@ -127,6 +128,19 @@ nnoremap <silent><leader>ca <cmd>lua require('lspsaga.codeaction').code_action()
 " nvim-compe
 inoremap <silent><expr> <CR> compe#confirm('<CR>')
 inoremap <silent><expr> <C-Space> compe#complete()
+
+
+" vim-iced (clojure)
+
+nnoremap <leader>re   :IcedEvalOuterTopList<CR>
+nmap <leader>e <Plug>(iced_eval_and_print)af
+nmap <leader>he <Plug>(iced_eval_and_print)af
+nmap <Leader>hf <Plug>(iced_eval_outer_top_list)
+
+nmap <Nop>(iced_command_palette) <Plug>(iced_command_palette)
+nmap <Leader>hc <Plug>(iced_command_palette)
+nmap <Leader>hd <Plug>(iced_clojuredocs_open)
+nmap <Leader>hb :IcedStdoutBufferOpen<CR>
 
 
 
