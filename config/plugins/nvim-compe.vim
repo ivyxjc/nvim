@@ -1,3 +1,6 @@
+
+highlight link CompeDocumentation NormalFloat
+
 lua <<EOF
 vim.o.completeopt = "menuone,noselect"
 

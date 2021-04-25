@@ -129,6 +129,10 @@ inoremap <silent><expr> <CR> compe#confirm('<CR>')
 inoremap <silent><expr> <C-Space> compe#complete()
 
 
+" vim-iced (clojure)
+
+nnoremap <leader>re   :IcedEvalOuterTopList<CR>
+
 
 ""-----------------------------------------------------------------------------
 " programming ends
