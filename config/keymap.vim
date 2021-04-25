@@ -22,6 +22,10 @@ nnoremap <silent> <leader>q :q<CR>
 "close uand delete buffer
 nnoremap <silent> <leader>bd :bd<CR>
 
+"nvim <alt-p> prev <alt-n> next
+noremap <m-p> <c-o>
+noremap <m-n> <c-i>
+
 
 "-----------------------------------------------------------------------------
 " fzf 

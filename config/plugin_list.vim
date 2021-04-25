@@ -59,7 +59,11 @@ Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate'}
 "Plug 'nvim-lua/completion-nvim'
 "Plug 'glepnir/lspsaga.nvim'
 Plug 'hrsh7th/nvim-compe'
+" auto completion for bracket, quote...
 Plug 'Raimondi/delimitMate'
+
+"golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 ""-----------------------------
 " programming starts
