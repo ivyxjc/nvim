@@ -4,6 +4,14 @@ set scrolloff=0
 set autowriteall
 let g:mapleader= "\<Space>"
 let g:maplocalleader= "\<M>"
+
+" control the granularity level of undo
+inoremap <Space> <c-g>u<Space>
+inoremap <BS> <c-g>u<BS>
+inoremap <CR> <c-g>u<CR>
+inoremap <del> <c-g>u<del>
+
+
 " 基本配置
 if &compatible
     " 不要兼容vi
@@ -18,7 +26,9 @@ endif
 if has('autocmd')
     filetype plugin indent on
 endif
-
+inoremap <BS> <c-g>u<BS>
+inoremap <CR> <c-g>u<CR>
+inoremap <del> <c-g>u<del>
 if has('multi_byte')
     set encoding=utf-8
     set fileencoding=utf-8
