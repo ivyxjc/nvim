@@ -53,6 +53,11 @@ nnoremap <silent> <c-F>       :Rg<CR>
 "-----------------------------------------------------------------------------
 " float terminal
 "-----------------------------------------------------------------------------
+nmap <silent> <M-t> :FloatermToggle<CR>
+tnoremap <silent> <M-t> <c-\><c-n>:FloatermToggle<cr>
+tnoremap <silent> <M-+> <c-\><c-n>:FloatermNew<cr>
+
+
 nmap <silent> <M-+> :FloatermNew<cr>
 nmap <silent> <M-=> :FloatermToggle<cr>
 tnoremap <silent> <M-+> <c-\><c-n>:FloatermNew<cr>
