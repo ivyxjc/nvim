@@ -54,8 +54,8 @@ nnoremap <silent> <c-F>       :Rg<CR>
 "-----------------------------------------------------------------------------
 " float terminal
 "-----------------------------------------------------------------------------
-nmap <silent> <M-t> :FloatermToggle<CR>
-tnoremap <silent> <M-t> <c-\><c-n>:FloatermToggle<cr>
+nmap <silent> <C-t> :FloatermToggle<CR>
+tnoremap <silent> <C-t> <c-\><c-n>:FloatermToggle<cr>
 
 nmap <silent> <M-+> :FloatermNew<cr>
 tnoremap <silent> <M-+> <c-\><c-n>:FloatermNew<cr>
@@ -139,6 +139,7 @@ tnoremap <silent> <M-o> <C-\><C-n>:RnvimrToggle<CR>
 " nerdtree
 ""-----------------------------------------------------------------------------
 nnoremap <leader>tt :NERDTreeToggle<CR>
+" nnoremap <leader>tc :NERDTreeCWD<CR>
 
 ""-----------------------------------------------------------------------------
 " programming starts
